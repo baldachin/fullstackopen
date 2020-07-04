@@ -1,0 +1,9 @@
+title part 0-6 New note
+
+note over browser:
+submit new note
+end note
+browser-->browser: JS push(new_note) to note list
+browser-->browser: JS redrawNotes()
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: HTML-code
